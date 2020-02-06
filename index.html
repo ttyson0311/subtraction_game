@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8" />
+    <title>Subtraction Math Game 👀</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Subtraction Math Game</a>
+       
+        <div  id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active score-title">
+              Score:
+              <div class ="score">0</div>
+
+            </li>
+            
+            <li class="nav-item timer-title ">
+              Timer:
+              <div class ="timer"></div>
+
+            </li>
+
+            <li class="nav-item play-again">
+                Play Again
+              </li>
+           
+          </ul>
+
+      </nav>
+    </div>
+
+    <div class = 'time-up'> GAME OVER</div>
+    <div class='container'>
+
+      <div class = 'equation'>
+        <div class = 'numbers num1'>
+        </div>
+        <div class="numbers num2"></div>
+        <div class = "line"></div>
+      <div class="operator">-</div>
+    </div>
+
+
+      <div class = 'answers'>
+        <div id = 'an-num1' class = 'answer'></div>
+        <div id = 'an-num2' class = 'answer'></div>
+        <div id = 'an-num3' class = 'answer'></div>
+        <div id = 'an-num4' class = 'answer'></div>
+        <div id = 'an-num5' class = 'answer'></div>
+
+        </div>
+
+
+      </div>
+
+      <footer> <p>Sound effects obtained from https://www.zapsplat.com</p></footer>
+
+      <audio
+      class="bell"
+      src="./sounds/bell.mp3"
+      type="audio/mp3"
+    ></audio>
+
+    <audio
+    class="incorrect"
+    src="./sounds/incorrect.mp3"
+    type="audio/mp3"
+  ></audio>
+
+  <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

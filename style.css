@@ -1,0 +1,382 @@
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  /* margin-left: 250px; */
+  color: white;
+  margin-left: 150px;
+  display: inline-block;
+  width: 100%;
+}
+li {
+  margin-left: 150px;
+  width: 150px;
+}
+
+.timer {
+  margin-left: 10px;
+}
+.timer-title {
+  display: flex;
+}
+
+.score-title {
+  display: flex;
+}
+
+.score {
+  margin-left: 10px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+.equation {
+  font-family: "Cinzel", serif;
+
+  margin-left: 500px;
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 60px;
+  width: 180px;
+  height: 300px;
+  word-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.numbers {
+  position: relative;
+}
+.num1 {
+  position: relative;
+  top: 25px;
+}
+
+.operator {
+  position: absolute;
+  margin: 0px;
+  font-size: 50px;
+  top: 215px;
+  left: 630px;
+}
+.line {
+  border-top: 2px solid black;
+  width: 100px;
+  margin: 0;
+  position: relative;
+}
+
+footer,
+p {
+  position: fixed;
+  left: 50px;
+  bottom: 0;
+  width: 100%;
+  font-size: 8px;
+}
+
+.answers {
+  font-family: "Cinzel", serif;
+
+  display: flex;
+  position: absolute;
+  width: 1200px;
+  font-size: 50px;
+  justify-content: space-around;
+  color: #d6fc04;
+}
+
+.answer {
+  cursor: pointer;
+  background-color: #045afc;
+
+  border-radius: 100px;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  padding: 15px 25px;
+  box-shadow: 0 9px #04fc2a;
+  outline: none;
+}
+
+.style {
+  font-size: 5px;
+}
+
+.correctAnswer {
+  background-color: #04fc2a;
+  box-shadow: 0 5px #666;
+  transform: translateY(20px);
+}
+
+.incorrectAnswer {
+  background-color: #fc0c04;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.endingScore {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.time-up {
+  display: none;
+  position: absolute;
+  font-size: 10px;
+  margin-left: 450px;
+  margin-top: 100px;
+  color: #045afc;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 15px;
+  opacity: 0;
+  -webkit-animation: appear 8s;
+  animation: appear 8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; /*keeps animation settings*/
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateY(0);
+    font-size: 100px;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    font-size: 100px;
+  }
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.play-again {
+  cursor: pointer;
+}
+/***** MOBILE ******/
+
+@media all and (max-width: 800px) {
+  ul {
+    width: 60%;
+    position: absolute;
+    left: 10px;
+    bottom: 38px;
+    font-size: 12px;
+  }
+
+  li {
+    margin-left: 0px;
+    width: 80px;
+    position: absolute;
+  }
+
+  .timer-title {
+    left: 90px;
+    display: flex;
+  }
+
+  .play-again {
+    left: 170px;
+  }
+
+  .score-title {
+    display: flex;
+  }
+
+  .equation {
+    margin: auto;
+    display: flex;
+    font-size: 60px;
+  }
+
+  .operator {
+    left: 150px;
+  }
+
+  .answers {
+    margin: auto;
+    width: 400px;
+    font-size: 25px;
+    justify-content: space-around;
+    color: #d6fc04;
+  }
+
+  .answer {
+    border-radius: 100px;
+    text-align: center;
+    width: 50px;
+    margin: auto;
+    padding: 5px 10px;
+    box-shadow: 0 9px #04fc2a;
+    outline: none;
+  }
+  .endingScore {
+    font-size: 12px;
+  }
+
+  .time-up {
+    font-size: 10px;
+    margin-left: 50px;
+    margin-top: 100px;
+    color: #045afc;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 15px;
+    opacity: 0;
+    -webkit-animation: appear 8s;
+    animation: appear 8s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; /*keeps animation settings*/
+  }
+
+  @-webkit-keyframes appear {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateY(0);
+      font-size: 45px;
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      font-size: 45px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  ul {
+    width: 60%;
+    position: absolute;
+    left: 150px;
+    bottom: 38px;
+  }
+
+  li {
+    margin-left: 0px;
+    width: 80px;
+    position: absolute;
+  }
+
+  .timer-title {
+    left: 110px;
+    display: flex;
+  }
+
+  .play-again {
+    left: 230px;
+  }
+
+  .score-title {
+    display: flex;
+  }
+
+  .equation {
+    margin-left: 300px;
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 60px;
+  }
+
+  .operator {
+    left: 400px;
+  }
+
+  .answers {
+    width: 800px;
+    font-size: 30px;
+    justify-content: space-around;
+    color: #d6fc04;
+    right: 2px;
+  }
+
+  .answer {
+    border-radius: 100px;
+    text-align: center;
+    width: 90px;
+    margin: auto;
+    padding: 15px 25px;
+    box-shadow: 0 9px #04fc2a;
+    outline: none;
+  }
+
+  .time-up {
+    font-size: 10px;
+    margin-left: 50px;
+    margin-top: 100px;
+    color: #045afc;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 15px;
+    opacity: 0;
+    -webkit-animation: appear 8s;
+    animation: appear 8s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; /*keeps animation settings*/
+  }
+
+  @-webkit-keyframes appear {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateY(0);
+      font-size: 80px;
+    }
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      font-size: 80px;
+    }
+  }
+}
